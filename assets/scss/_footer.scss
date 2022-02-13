@@ -1,0 +1,115 @@
+
+.footer-area {
+    background: var(--theme-bg);
+    padding:  50px 0px;
+}
+
+.footer-wrapper {
+    max-width: 1214px;
+    margin: 0 auto;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 40px;
+}
+
+.single-ftr-item {
+    .title {
+        h4 {
+            color: var(--white-txt);
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 1;
+            text-decoration: underline;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        list-style: none;
+        li {
+            display: block;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                color: var(--white-txt);
+                display: block;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 1.2;
+                letter-spacing: 1.2px;
+            }
+        }
+    }
+}
+
+.ftr-contact {
+    > a {
+        margin-top: 20px;
+        display: block;
+        font-size: 15px;
+        color: var(--font-color);
+        font-weight: 400;
+        line-height: 1;
+    }
+    .social {
+        margin-top: 20px;
+        a {
+            margin-right: 30px;
+        }
+    }
+}
+
+.footer-content {
+    margin-top: 45px;
+    text-align: center;
+    h4 {
+        color: var(--white-txt);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1;
+        text-decoration: underline;
+        letter-spacing: 1.2px;
+        margin-bottom: 10px;
+    }
+    p {
+        color: var(--white-txt);
+        font-size: 15px;
+        line-height: 1.4;
+        &:last-child {
+            margin-top: 15px;
+        }
+    }
+}
+
+// Responsive
+@media screen and (max-width: 991px) {
+    .footer-item {
+        grid-gap: 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer-area {
+        padding-bottom: 30px;
+    }
+    .footer-item {
+        flex-wrap: wrap;
+        .title {
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer-item {
+        flex-direction: column;
+    }
+     
+}

@@ -1,0 +1,139 @@
+
+.team-area {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0px 0px 120px;
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: var(--white-bg);
+        z-index: -1;
+        top: 0;
+        left: 0;
+        opacity: 0.2;
+    }
+}
+
+.team-title {
+    max-width: 1424px;
+    margin: 0 auto;
+    h2 {
+        font-size: 162px;
+        font-weight: 500;
+        line-height: 1.3;
+        text-transform: uppercase;
+        max-width: 1450px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+        span {
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+            display: inline-block;
+            margin-left: 20px;
+        }
+    }
+}
+
+.team-wrapper {
+    max-width: 1424px;
+    margin: 90px auto 0px;
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 30px;
+    text-align: center;
+    
+}
+.single-team {
+    &:hover {
+        color: var(--theme-txt-clr);
+    }
+    a {
+        display: block;
+        font-size: 36px;
+        font-weight: 500;
+        color: var(--font-color);
+        text-transform: uppercase;
+        margin-top: 15px;
+        transition: all .3s ease;
+    }
+}
+
+// Responsive 
+@media screen and (max-width: 1400px) {
+    .team-title {
+        h2 {
+            font-size: 110px;
+        }
+    }
+}
+@media screen and (max-width: 1199px) {
+    .team-area {
+        padding-bottom: 90px;
+    }
+    .team-title {
+        padding-top: 20px;
+        h2 {
+            font-size: 70px;
+        }
+    }
+    .team-wrapper {
+        margin: 50px auto 0px;
+    }
+    .single-team {
+        a {
+            font-size: 24px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .team-area {
+        padding-bottom: 70px;
+    }
+    .team-title {
+        h2 {
+            font-size: 55px;
+        }
+    }
+    .team-wrapper {
+        grid-gap: 20px;
+        margin-top: 40px;
+    }
+    .single-team {
+        a {
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .team-area {
+        padding-bottom: 50px;
+    }
+    .team-title {
+        h2 {
+            font-size: 34px;
+            span {
+                margin-left: 10px;
+            }
+        }
+    }
+    .team-wrapper {
+        grid-gap: 30px;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .single-team {
+        img {
+            width: 100%;
+        }
+        a {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    }
+}
