@@ -1,0 +1,11 @@
+
+// Dark Light
+.dark-theme {
+    .banner-area,
+    .about-area,
+    .team-area {
+        &::before {
+            opacity: 0.8;
+        }
+    }
+}

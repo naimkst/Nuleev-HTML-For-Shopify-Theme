@@ -34,7 +34,7 @@
         .outline {
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-color: var(--txt-color);
         }
         .slct {
             display: flex;

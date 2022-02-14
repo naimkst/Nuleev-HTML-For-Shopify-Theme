@@ -39,8 +39,6 @@
 		return false;
 	});
 
-
-
 	function jetix_svg() {
 		jQuery('img').each(function() {
 			var jQueryimg = jQuery(this);
@@ -57,15 +55,12 @@
 				jQuerysvg = jQuerysvg.removeAttr('xmlns:a');
 				// Replace image with new SVG
 				jQueryimg.replaceWith(jQuerysvg);
-
 			}, 'xml');
-
 		});
 	}
 	$(document).each(function() {
 		jetix_svg();
 	})
-
 
 
 })(jQuery);

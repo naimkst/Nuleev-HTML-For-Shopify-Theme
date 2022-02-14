@@ -29,6 +29,7 @@
         img {
             max-width: 100%;
             width: 100%;
+            fill: var(--txt-color);
         }
     }
 }
@@ -44,7 +45,14 @@
         letter-spacing: 2px;
         color: var(--txt-color);
     }
+    svg {
+        line {
+            stroke: var(--txt-color);
+        }
+    }
 }
+
+
 
 // Responsive 
 @media screen and (max-width: 767px) {
